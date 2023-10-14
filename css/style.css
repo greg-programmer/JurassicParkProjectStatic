@@ -1,6 +1,6 @@
 
 *{
-    list-style: none;       
+    list-style: none;   
 }
 
 @font-face {
@@ -28,8 +28,19 @@ header > ul {
     align-items: center;
     padding: 0;
 }
+#navbarSupportedContent > form > button{
+    background-color: white;
+}
+
+#navbarSupportedContent > ul{
+   margin-bottom: 0;   
+}
 body > header > ul > ul > li:nth-child(2) > a{
 color: white;
+text-decoration: none;
+}
+#navbarSupportedContent > ul > li > a{
+    color: #ced02d;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
