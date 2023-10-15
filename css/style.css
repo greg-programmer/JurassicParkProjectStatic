@@ -65,16 +65,22 @@ body > div > div > article > figure > ul{
     padding-top: 12px;
     color: #ced02d;
     color: white;
+    font-size: medium;
 }
 body > div > div > article > figure > ul > li:nth-child(2) > a{
     color: #ced02d;
 }
 body > div > div > article > figure{
-    background-color: black;     
+    background-color: black;  
+    display: flex;
+    align-items: center;   
 }
 body > div > div > article{
     background-color: black; 
     height: 300px;      
+}
+body > div > div > article > figure > ul > li > h5{
+    font-size: medium;
 }
 footer{
     width: 100%;
