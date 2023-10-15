@@ -13,6 +13,9 @@ ul{
 body > nav > div{
     width: 40%;
  }
+ figure{
+    margin: 0;
+ }
 header{
     display: flex;
     width: 100%;
@@ -56,6 +59,21 @@ text-decoration: none;
 #navbarSupportedContent > ul{
     width: 60%;
     justify-content: space-around;
+}
+/*Card*/
+body > div > div > article > figure > ul{
+    padding-top: 12px;
+    color: #ced02d;
+    color: white;
+}
+body > div > div > article > figure > ul > li:nth-child(2) > a{
+    color: #ced02d;
+}
+body > div > div > article > figure{
+    background-color: black;
+}
+body > div > div > article{
+    background-color: black;    
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
