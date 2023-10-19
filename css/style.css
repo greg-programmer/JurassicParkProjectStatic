@@ -6,9 +6,19 @@ nav{
     background-color: #8b0000;
     
 }
+.container{
+    background-color:  #d4d4d1;
+    border-radius: 8px;
+}
 @font-face {
 	font-family: 'JurassicPolice';
 	src: url('/Polices/Jurassic_Park.ttf')
+}
+h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 24px !important;
+    padding-top: 12px;
 }
 h4{
     color: #ced02d;    
@@ -23,10 +33,13 @@ body > nav > div{
     width: 40%;
  }
  figure{
+    display: flex;
+    align-items: center;
     margin: 0 !important; 
+    background-color: black;
     width: 100%;
     position: absolute; 
-    height: 120px;
+    height: 148px;
     bottom: 0;
     padding: 0;
     left: 0;
@@ -94,12 +107,32 @@ body > div > div > article > figure{
 }
 body > div > section > article{
     margin-top: 12px;   
-    overflow: hidden;
+    overflow: hidden;    
+}
+
+
+.main_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_image > button{
+    padding: 12px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border: solid 2px #ced02d;
+    font-family: Arial, Helvetica, sans-ser;
+    border-radius: 8px;
 }
 body > div > section {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    padding: 0 12px 12px 12px;
+    margin: 0 0 20px 0;
+    border-radius: 8px;
 }
 body > div > section > article > figure > ul > li > h5{
     font-size: medium;
@@ -112,14 +145,20 @@ body > div > section > article{
     background-color: black;
     border: solid 2px #ced02d;
     border-radius: 8px;
+    transform: scale(1);
+    transition-duration: 0.4s;
+    transition-delay: 0.400ms;   
 }
+body > div > section > article:hover{
+   transform: scale(1.1);
+}
+
 
 footer{
     width: 100%;
     display: flex;
     height: 100px;
-    background-color: black; 
-    margin-top: 12px;
+    background-color: black;  
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
