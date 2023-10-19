@@ -13,6 +13,9 @@ nav{
 h4{
     color: #ced02d;    
 }
+h5{
+    font-size: medium;
+}
 ul{
     margin: 0;
 }
@@ -80,30 +83,42 @@ body > div > div > article > figure > ul{
     font-size: medium;
 }
 
-body > div > div > article > figure > ul > li:nth-child(2) > a{
+body > div > section > article > figure > ul > li:nth-child(2) > a{
     color: #ced02d;
+    font-size: medium;
 }
 body > div > div > article > figure{
     background-color: black;  
     display: flex;
     align-items: center;   
 }
-body > div > div > article{
-    background-color: black; 
-    height: 300px;   
-    width: 370px;
-    padding-top: 12px;
-    position: relative;
+body > div > section > article{
+    margin-top: 12px;   
     overflow: hidden;
 }
-body > div > div > article > figure > ul > li > h5{
-    font-size: medium;
+body > div > section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+body > div > section > article > figure > ul > li > h5{
+    font-size: medium;
+    color: white;
+}
+body > div > section > article{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: solid 2px #ced02d;
+    border-radius: 8px;
+}
+
 footer{
     width: 100%;
     display: flex;
     height: 100px;
-    background-color: black;
+    background-color: black; 
     margin-top: 12px;
 }
 /* Extra small devices (phones, 600px and down) */
@@ -118,10 +133,15 @@ footer{
      body > nav > div{
         width: 98%;
      }
+     body > div > section {       
+        justify-content: center;       
+    }
+    
+    
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {   header > ul {    
-    width: 95%;     
+    width: 100%;     
 }
 #navbarSupportedContent > ul{
     flex-direction: column; 
@@ -129,7 +149,7 @@ footer{
  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {   
+@media only screen and (max-width: 768px) {   
     header > ul
     {    
     width: 90%; 
@@ -138,6 +158,7 @@ footer{
         flex-direction: column; 
         padding: 0;
      }  
+     
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {   header > ul {    
