@@ -127,6 +127,10 @@ body > div > div > article{
 body > div > div > article > figure > ul > li > h5{
     font-size: medium;
 }
+body > div > div > article > figure > ul > li > p{
+    font-size: medium;
+    color: white !important;
+}
 article{
     position: relative;
     overflow: hidden;
