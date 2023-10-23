@@ -24,6 +24,7 @@ h5{
 }
 ul{
     margin: 0;
+    padding-right: 12px;
 }
 body > nav > div{
     width: 40%;
@@ -159,22 +160,18 @@ footer{
         flex-direction: column; 
         padding: 0;
      }
-     body > nav > div{
-        width: 98%;
-     }
+   
      body > div > section {       
         justify-content: center;       
-    }
-    
+    }    
     
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {   header > ul {    
+@media only screen and (max-width: 600px) {   header > ul {    
     width: 100%;     
 }
-#navbarSupportedContent > ul{
-    flex-direction: column; 
-    padding: 0;
+body > div > section{
+    padding: 0 12px 12px 12px;
  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
